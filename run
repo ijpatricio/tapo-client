@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# Inspired on https://github.com/adriancooney/Taskfile
+# Add an alias => alias run=./run
+
+function help {
+    echo "$0 <task> <args>"
+    echo "Tasks:"
+    compgen -A function | cat -n
+}
+
+function default {
+    help
+}
+
+function install {
+    pip3 install -r requirements.txt
+}
+
+function on {
+    python3 main.py
+}
