@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Inspired on https://github.com/adriancooney/Taskfile
-# Add an alias => alias run=./run
-
 function help {
     echo "$0 <task> <args>"
     echo "Tasks:"
@@ -17,6 +14,18 @@ function install {
     pip3 install -r requirements.txt
 }
 
-function on {
-    python3 main.py
+function mic_on {
+    python3 main.py micro on
 }
+
+function mic_off {
+    python3 main.py micro off
+}
+
+function main {
+    python3 main.py "$1" "$2"
+}
+
+
+TIMEFORMAT="Task completed in %3lR"
+time "${@:-default}"

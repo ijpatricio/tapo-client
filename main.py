@@ -9,7 +9,7 @@ password = os.getenv("PASSWORD")
 # States
 states = ["on","off","toggle"]
 
-# Define the array
+# Device IP Addresses
 device_ips = {
     "micro": "192.168.68.100",
     "camera": "192.168.68.110",
