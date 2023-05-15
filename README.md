@@ -45,3 +45,8 @@ python3 main.py micro on
 python3 main.py micro off
 python3 main.py micro toggle
 ```
+
+## Credits
+
+Thanks to [PyP100](https://pypi.org/project/PyP100/)
+
