@@ -1,3 +1,19 @@
+## Tapo Client
+
+Control your Tapo Smart Plug from your terminal or StreamDeck.
+
+![Tapo Plugs](./docs/Tapo_Plug.jpg)
+
+You can then configure actions.
+
+![StreamDeck Buttons](./docs/Buttons.png)
+
+And have them run like so:
+
+![StreamDeck Button Config](./docs/Button_Action.png)
+
+NOTE: The file has to have an extension - `.sh` in this case, or it will not work.
+
 To get started:
 
 ```
@@ -11,8 +27,8 @@ Inside main.py, add devices:
 ---
 # Device IP Addresses
 device_ips = {
-    "micro": "192.168.68.100",
-    "camera": "192.168.68.110",
+    "micro": "192.168.1.100",
+    "camera": "192.168.1.101",
 }
 ```
 
